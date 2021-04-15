@@ -56,15 +56,12 @@
     border-top: 3px solid white;
     transition: transform 0.3s ease-in-out;
 }
-
 .menu__listItem.active .hasDropdown::after {
     transform: rotate(180deg);
 }
-
 .menu__listItem.active .menu__subItem {
     max-height: 120px;
 }
-
 .menu__closeIcon {
     position: absolute;
     right: 15px;
@@ -79,9 +76,6 @@
     max-height: 0px;
     transition: max-height 0.4s ease-in-out;
     overflow: hidden;
-}
-.subItem--show {
-    max-height: 120px;
 }
 .subItem__link {
     display: inline-block;
@@ -102,7 +96,19 @@
 .rotate {
     transform: rotate(180deg);
 }
-
+@media (min-width: 768px) {
+    .header {
+        height: 80px;
+    }
+    .logo__icon {
+        width: 200px;
+        height: 16px;
+    }
+    .menu__icon--change {
+        width: 20px;
+        height: 20px;
+    }
+}
 @media (min-width: 1023px) {
     .header {
         padding: 0 4%;
