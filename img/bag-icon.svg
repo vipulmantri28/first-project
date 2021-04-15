@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bag</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-320---v3---Ivy-Mode-Light" transform="translate(-278.000000, -24.000000)">
+            <g id="bag" transform="translate(278.000000, 24.000000)">
+                <rect id="box" x="0" y="0" width="16" height="16"></rect>
+                <rect id="Path" stroke="#FFFFFF" stroke-width="1.5" x="1.75" y="5.75" width="12.5" height="8.5" rx="1"></rect>
+                <path d="M8,1.75 C8.62145,1.75 9.18397412,2.00173429 9.59111991,2.40888009 C9.99826571,2.81602588 10.25,3.37855 10.25,4 L10.25,4 L10.25,5.25 L5.75,5.25 L5.75,4 C5.75,3.37855 6.00173429,2.81602588 6.40888009,2.40888009 C6.81602588,2.00173429 7.37855,1.75 8,1.75 Z" id="Path" stroke="#FFFFFF" stroke-width="1.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>
