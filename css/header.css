@@ -59,9 +59,11 @@
 }
 .headerIcons {
     display: flex;
+    align-items: center;
 }
 .headerIcon {
     padding-right: 55px;
+    display: inline-block;
 }
 .headerIcon--bag {
     padding-right: 0;
@@ -69,4 +71,16 @@
 .search__icon, .account__icon, .bag__icon {
     width: 16px;
     height: 16px;
+}
+.hasItems {
+    position: relative;
+    top: -3px;
+    right: 2px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 5px;
+    border-radius: 3px;
+    background: #E67A62;
+    vertical-align: top;
 }
