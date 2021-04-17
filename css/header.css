@@ -3,84 +3,186 @@
     src: url(./../assets/Wotfard_Roman_Webfont/wotfard-medium-webfont.ttf) format('truetype')
 
 }
-/* header design for desktop width 1440px */
+/* design for mobile devices */
+
 .header {
-    margin: auto;
-    max-width: 1440px;
-}
-.header__wrapper {
     display: flex;
-    justify-content: space-between;
-    padding: 0 72px;
-    height: 99px;
+    padding: 0 20px;
+    height: 64px;
     background-color: #2E251C;
     align-items: center;
+    justify-content: space-between;
 }
-.header__center {
-    position: absolute;
-    left: 50%;
-    display: inline-flex;
-    transform: translateX(-50%);
+.navigation__desktop {
+    display: none;
 }
-.logo {
-    display: inline-flex;
-}
-.logoIcon {
-    width: 234px;
-    height: 19px;
-}
-.navigation {
-    display: flex;
-}
-.navigation__item {
-    display: inline-flex;
-    margin-right: 33px;
-}
-.navigation__item:nth-child(2) {
-    margin-right: 30px;
-}
-.navigation__link {
-    display: inline-flex;
-    line-height: 13px;
-    font-size: 14px;
-    letter-spacing: 2.15px;
-    align-items: center;
-    color: white;
-    text-transform: uppercase;
-    font-family: "wotfardMedium";
-}
-.hasDropdown::after {
+.hamburger {
+    position: relative;
     display: inline-block;
-    margin-left: 4px;
+    width: 15px;
+    border: 1px solid white;
+}
+.hamburger::before {
     content: '';
-    border-left: 3px solid transparent;
-    border-right: 3px solid transparent;
-    border-top: 3px solid white;
+    position: absolute;
+    width: 15px;
+    bottom: 6px;
+    right: -1px;
+    border: 1px solid white;
+}
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    top: 6px;
+    right: -1px;
+    border: 1px solid white;
+}
+.logo__icon {
+    width: 161px;
+    height: 13px;
 }
 .headerIcons {
-    display: flex;
-    align-items: center;
+    text-align: end;
 }
-.headerIcon {
-    padding-right: 55px;
-    display: inline-block;
+.headerIcons li {
+    display: inline;
 }
-.headerIcon--bag {
-    padding-right: 0;
+.headerIcons--account {
+    display: none;
 }
 .search__icon, .account__icon, .bag__icon {
     width: 16px;
-    height: 16px;
+    height: 23px;
+}
+.headerIcons__icon {
+    margin-right: 16px;
+}
+.headerIcons--bag {
+    margin-right: 0;
 }
 .hasItems {
     position: relative;
     top: -3px;
-    right: 2px;
+    right: 3px;
     display: inline-block;
     width: 6px;
     height: 6px;
-    margin-left: 5px;
     border-radius: 3px;
     background: #E67A62;
     vertical-align: top;
 }
+
+@media (min-width: 768px) {
+    .header {
+        padding: 0 40px;
+        height: 70px;
+        justify-content: unset;
+    }
+    .header__left, .header__center, .header__right {
+        flex-basis: 33.3%;
+    }
+    .hamburger {
+        width: 24px;
+        border-width: 2px;
+    }
+    .hamburger::before {
+        bottom: 8px;
+        right: -2px;
+        width: 24px;
+        border-width: 2px;
+    }
+    .hamburger::after {
+        top: 8px;
+        right: -2px;
+        width: 24px;
+        border-width: 2px;
+    }
+    .header__center {
+        text-align: center;
+    }
+    .logo__icon {
+        width: 180px;
+        height: 15px;
+    }
+}
+/* design for desktop min-width 1200px */
+@media (min-width: 1024px) {
+    .header {
+        padding: 0 60px;
+        height: 80px;
+    }
+    .header__hamburger {
+        display: none;
+    }
+    .navigation__desktop {
+        display: block;
+    }
+    .navigation__link {
+        position: relative;
+        margin-right: 28px;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        align-items: center;
+        color: white;
+        text-transform: uppercase;
+        font-family: "wotfardMedium";
+    }
+    .navigation__link:last-child {
+        margin-right: 0;
+    }
+    .navigation--hasDropdown::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-left: 4px;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 3px solid white;
+    }
+    .logo__icon {
+        width: 200px;
+        height: 17px;
+    }
+    .headerIcons__icon {
+        margin-right: 50px;
+    }
+    .headerIcons--account {
+        display: inline;
+    }
+}
+
+/* header design for desktop width 1440px */
+@media (min-width: 1200px) {
+    .header {
+        padding: 0 72px;
+        height: 99px;
+    }
+    .header__left, .header__center, .header__right {
+        flex-basis: 33.3%;
+    }
+    /* left header and desktop navigation styles */
+    .navigation__link {
+        margin-right: 33px;
+        font-size: 14px;
+        letter-spacing: 2.15px;
+    }
+    /* logo design and position */
+    .logo__icon {
+        width: 234px;
+        height: 19px;
+    }
+    /* left header icon styles */
+    .headerIcons__icon {
+        margin-right: 55px;
+    }
+    .headerIcons--bag {
+        margin-right: 0;
+    }
+    .search__icon, .account__icon, .bag__icon {
+        width: 16px;
+        height: 23px;
+    }
+}
+
+
