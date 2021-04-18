@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "wotfardRegular";
+    src: url(/assets/Wotfard_Roman_Webfont/wotfard-regular-webfont.ttf);
+}
+@font-face {
+    font-family: "ivyModeLight";
+    src: url(/assets/IvyMode_Font/IvyModeLight/IvyModeLight.otf);
+}
+
+.hero {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.hero__pureRadiance {
+    font-family: "wotfardRegular";
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.hero__exfoliating {
+    font-family: "ivyModeLight";
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+.hero__shop {
+    padding: 8px 32px;
+    margin-top: 36px;
+    margin-bottom: 48px;
+    font-family: 'wotfardRegular';
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid #F48065;
+    outline: none;
+    background: white;
+}
+.hero__bottom {
+    overflow: hidden;
+}
+.hero__banner {
+    position: relative;
+    left: 54px;
+    height: 221px;
+    transform: scaleX(-1);
+}
+.hero__product {
+    position: relative;
+    bottom: 40px;
+    width: 131px;
+}
