@@ -8,6 +8,7 @@
 }
 
 .hero {
+    position: relative;
     margin-top: 40px;
     margin-left: 20px;
 }
@@ -36,15 +37,69 @@
 }
 .hero__bottom {
     overflow: hidden;
+    text-align: right;
 }
 .hero__banner {
     position: relative;
     left: 54px;
-    height: 221px;
+    width: 100%;
+    max-width: 925px;
     transform: scaleX(-1);
 }
 .hero__product {
-    position: relative;
-    bottom: 40px;
-    width: 131px;
+    position: absolute;
+    top: 93%;
+    left: 0;
+    width: 44%;
+    max-width: 414px;
+}
+
+@media (min-width:576px) {
+    .hero {
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+    .hero__pureRadiance {
+        font-size: 25px;
+    }
+    .hero__product {
+        top: 65%;
+    }
+}
+@media (min-width:768px) {
+    .hero {
+        margin-top: 80px;
+        margin-left: 70px;
+    }
+    .hero__pureRadiance {
+        font-family: "ivyModeLight";
+        font-size: 48px;
+    }
+    .hero__shop {
+        padding: 17px 48px;
+        font-size: 14px;
+    }
+}
+@media (min-width:1024px) {
+    .hero {
+        margin-top: 108px;
+        margin-right: 110px;
+    }
+    .hero__pureRadiance, .hero__exfoliating {
+        font-size: 64px;
+    }
+    .hero__product {
+        top: 50%;
+    }
+    .hero__banner {
+        transform: scale(1);
+    }
+}
+@media (min-width: 1300px) {
+    .hero {
+        margin-left: 131px;
+    }
+    .hero__product {
+        top: 40%;
+    }
 }
