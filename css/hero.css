@@ -74,6 +74,7 @@
     .hero__pureRadiance {
         font-family: "ivyModeLight";
         font-size: 48px;
+        letter-spacing: 2px;
     }
     .hero__shop {
         padding: 17px 48px;
