@@ -205,9 +205,12 @@
     }
     /* left header and desktop navigation styles */
     .navigation__link {
-        margin-right: 33px;
+        margin-right: 39px;
         font-size: 14px;
         letter-spacing: 2.15px;
+    }
+    .navigation__link:nth-child(2) {
+        margin-right: 24px;
     }
     /* logo design and position */
     .logo__icon {
@@ -215,8 +218,8 @@
         height: 19px;
     }
     /* left header icon styles */
-    .headerIcons__icon {
-        margin-right: 55px;
+    .headerIcons--search {
+        margin-right: 50px;
     }
     .headerIcons--bag {
         margin-right: 0;
