@@ -27,25 +27,29 @@
 }
 .hero__pureRadiance {
     font-family: "wotfardRegular";
+    margin-bottom: 10px;
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
+    line-height: 12px;
 }
 .hero__exfoliating {
     font-family: "ivyModeLight";
     font-size: 48px;
     letter-spacing: 2px;
+    line-height: 54px;
 }
 .hero__shop {
-    padding: 8px 32px;
+    padding: 7px 31px;
     margin-top: 36px;
     margin-bottom: 48px;
     font-family: 'wotfardRegular';
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     border: 1px solid #F48065;
     outline: none;
+    line-height: 16px;
     background: white;
 }
 .hero__banner {
@@ -61,7 +65,7 @@
     max-width: 410px;
 }
 .ourRitual {
-    margin: 28px 36px;
+    margin: 33px 36px;
 }
 .ourRitual__top {
     text-align: center;
@@ -70,7 +74,7 @@
     font-family: 'ivyModeLight';
     font-size: 32px;
     letter-spacing: 2px;
-    margin-bottom: 21px;
+    margin-bottom: 16px;
 }
 .ourRitual__subHeading {
     font-family: 'wotfardRegular';
@@ -78,13 +82,13 @@
     letter-spacing: 1.5px;
     font-size: 10px;
     color: black;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #F48065;
-    margin-bottom: 64px;
+    margin-bottom: 40px;
     display: inline-block;
 }
 .OurRitual__item {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 .item__img {
     width: 100%;
@@ -93,20 +97,24 @@
 .item__detail {
     text-align: left;
     margin-top: 16px;
-    margin-left: 11px;
+    margin-left: 7px;
 }
 .star {
-    width: 9px;
+    width: 10px;
+    height: 9.3px;
 }
 .item__rating {
-    line-height: 15px;
-    margin-left: 3px;
+    line-height: 19px;
+    margin-left: 2px;
+    margin-bottom: 5px;
 }
 .item__rating span {
-    font-family: "wotfardRgular";
+    font-family: "wotfardRegular";
     font-size: 11px;
+    line-height: 16px;
 }
 .item__name {
+    margin-bottom: 4px;
     font-family: 'wotfardRegular';
     text-transform: uppercase;
     font-size: 14px;
@@ -114,14 +122,15 @@
 }
 .item__price {
     font-family: 'wotfardMedium';
-    font-size: 14px;
+    font-size: 12px;
 }
 .item__add {
-    margin-left: 8px;
+    margin-left: 6px;
     font-family: 'wotfardMedium';
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
     color: #F48065;
+    letter-spacing: 1.05px;
 }
 
 

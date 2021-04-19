@@ -16,27 +16,26 @@
 .navigation--desktop {
     display: none;
 }
+.navigation__hamburgerIcon, .navigation__hamburgerIcon::before, .navigation__hamburgerIcon::after {
+    width: 14px;
+    border: 0.5px solid white;
+    border-radius: 1px;
+}
 .navigation__hamburgerIcon {
     position: relative;
     display: inline-block;
-    width: 15px;
-    border: 1px solid white;
 }
 .navigation__hamburgerIcon::before {
     content: '';
     position: absolute;
-    width: 15px;
-    bottom: 6px;
+    bottom: 8px;
     right: -1px;
-    border: 1px solid white;
 }
 .navigation__hamburgerIcon::after {
     content: '';
     position: absolute;
-    width: 15px;
-    top: 6px;
+    bottom: 3px;
     right: -1px;
-    border: 1px solid white;
 }
 .navigation__slider {
     position: fixed;
@@ -95,15 +94,20 @@
 .headerIcons--account {
     display: none;
 }
-.search__icon, .account__icon, .bag__icon {
+.search__icon, .account__icon {
     width: 16px;
-    height: 23px;
+    height: 15px;
+}
+.bag__icon {
+    width: 16px;
+    height: 16px;
 }
 .headerIcons__icon {
-    margin-right: 16px;
+    margin-right: 11px;
+    margin-left: 1px;
 }
 .headerIcons--bag {
-    margin-right: 0;
+    margin-right: -4px;
 }
 .hasItems {
     position: relative;
