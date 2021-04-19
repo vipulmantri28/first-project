@@ -155,13 +155,16 @@
         text-transform: capitalize;
     }
     .hero__shop {
-        padding: 17px 48px;
+        margin-top: 53px;
+        margin-bottom: 40px;
+        padding: 16px 49px;
         font-size: 14px;
+        letter-spacing: 2px;
     }
     .ourRitual__list {
         display: flex;
         margin: 0 auto;
-        max-width: calc(356*3px);
+        max-width: calc(357*3px);
     }
 }
 @media (min-width:1024px) {
@@ -173,29 +176,30 @@
         margin-left: 110px;
     }
     .hero__pureRadiance, .hero__exfoliating {
+        margin-bottom: 0;
         font-size: 64px;
+        line-height: 81px;
     }
     .hero__pureRadiance::after {
         content: ":";
     }
     .hero__product {
-        margin-top: -616px;
-    }
-    .hero__banner {
-        transform: scale(1);
+        margin-top: -848px;
+        margin-left: 54px;
     }
     .ourRitual {
-        margin-top: 158px;
+        margin-top: 128px;
         padding-bottom: 180px;
     }
     .ourRitual__heading {
+        margin-bottom: 46px;
         font-size: 48px;
-        margin-bottom: 51px;
         letter-spacing: 1.5px;
     }
     .ourRitual__subHeading {
-        font-size: 12px;
+        padding-bottom: 4px;
         margin-bottom: 80px;
+        font-size: 12px;
         letter-spacing: 2px;
     }
 }
