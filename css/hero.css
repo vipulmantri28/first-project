@@ -10,8 +10,11 @@
 .heroRitual {
     position: relative;
     overflow: hidden;
+    background-image: url(/img/ritual_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
-.heroRitual::before {
+/* .heroRitual::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -20,7 +23,7 @@
     background-image: url("/img/ritual_bg.png");
     background-repeat: no-repeat;
     background-position: bottom;
-}
+} */
 .hero {
     margin-top: 40px;
     margin-left: 20px;
@@ -89,10 +92,12 @@
 }
 .OurRitual__item {
     margin-bottom: 38px;
+    overflow: hidden;
 }
 .item__img {
     width: 100%;
     max-width: 356px;
+    transition: transform 0.5s ease-in-out;
 }
 .item__detail {
     text-align: left;
@@ -168,9 +173,9 @@
     }
 }
 @media (min-width:1024px) {
-    .heroRitual::before {
+    /* .heroRitual::before {
         transform: rotate(4deg);
-    }
+    } */
     .hero {
         margin-top: 108px;
         margin-left: 110px;
@@ -201,6 +206,9 @@
         margin-bottom: 80px;
         font-size: 12px;
         letter-spacing: 2px;
+    }
+    .OurRitual__item:hover .item__img {
+        transform: scale(1.1);
     }
 }
 @media (min-width: 1300px) {
