@@ -7,6 +7,9 @@
     src: url(/assets/IvyMode_Font/IvyModeLight/IvyModeLight.otf);
 }
 
+.home {
+    background: white;
+}
 .heroRitual {
     position: relative;
     overflow: hidden;
@@ -28,7 +31,8 @@
     margin-top: 40px;
     margin-left: 20px;
 }
-.hero__pureRadiance {
+.hero__title {
+    display: block;
     font-family: "wotfardRegular";
     margin-bottom: 10px;
     font-size: 12px;
@@ -36,18 +40,21 @@
     text-transform: uppercase;
     line-height: 12px;
 }
-.hero__exfoliating {
+.hero__heading {
     font-family: "ivyModeLight";
+    font-weight: lighter;
     font-size: 48px;
     letter-spacing: 2px;
     line-height: 54px;
 }
 .hero__shop {
+    display: inline-block;
     padding: 7px 31px;
     margin-top: 36px;
     margin-bottom: 48px;
     font-family: 'wotfardRegular';
     font-size: 10px;
+    color: black;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     border: 1px solid #F48065;
@@ -70,12 +77,13 @@
 .ourRitual {
     margin: 33px 36px;
 }
-.ourRitual__top {
+.ourRitual__header {
     text-align: center;
 }
 .ourRitual__heading {
     font-family: 'ivyModeLight';
     font-size: 32px;
+    font-weight: lighter;
     letter-spacing: 2px;
     margin-bottom: 16px;
 }
@@ -131,6 +139,8 @@
 }
 .item__add {
     margin-left: 6px;
+    border: none;
+    background: transparent;
     font-family: 'wotfardMedium';
     text-transform: uppercase;
     font-size: 12px;
@@ -144,7 +154,7 @@
         margin-top: 60px;
         margin-left: 40px;
     }
-    .hero__pureRadiance {
+    .hero__title {
         font-size: 25px;
     }
 }
@@ -153,7 +163,7 @@
         margin-top: 80px;
         margin-left: 70px;
     }
-    .hero__pureRadiance {
+    .hero__title {
         font-family: "ivyModeLight";
         font-size: 48px;
         letter-spacing: 2px;
@@ -180,12 +190,12 @@
         margin-top: 108px;
         margin-left: 110px;
     }
-    .hero__pureRadiance, .hero__exfoliating {
+    .hero__title, .hero__heading {
         margin-bottom: 0;
         font-size: 64px;
         line-height: 81px;
     }
-    .hero__pureRadiance::after {
+    .hero__title::after {
         content: ":";
     }
     .hero__product {
@@ -206,6 +216,9 @@
         margin-bottom: 80px;
         font-size: 12px;
         letter-spacing: 2px;
+    }
+    .item__imgDiv {
+        overflow: hidden;
     }
     .OurRitual__item:hover .item__img {
         transform: scale(1.1);
