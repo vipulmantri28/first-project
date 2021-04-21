@@ -267,3 +267,38 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+/* global CSS */
+
+/* heading level 1 */
+
+.heading-1 {
+  font-family: 'ivyModeLight';
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+/* button css */
+.button {
+  font-family: 'wotfardRegular';
+  color: black;
+}
+
+/* naked button */
+
+.nakedButton {
+  font-family: 'wotfardRegular';
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+  color: black;
+}
+
+/* clear button */
+
+.clearButton {
+  border: none;
+  background: transparent;
+  font-family: 'wotfardMedium';
+  text-transform: uppercase;
+}

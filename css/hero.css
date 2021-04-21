@@ -17,16 +17,6 @@
     background-repeat: no-repeat;
     background-position: bottom;
 }
-/* .heroRitual::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    transform: rotate(-19deg);
-    background-image: url("/img/ritual_bg.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-} */
 .hero {
     margin-top: 40px;
     margin-left: 20px;
@@ -41,34 +31,29 @@
     line-height: 12px;
 }
 .hero__heading {
-    font-family: "ivyModeLight";
-    font-weight: lighter;
     font-size: 48px;
-    letter-spacing: 2px;
     line-height: 54px;
 }
-.hero__shop {
+
+.hero__button {
     display: inline-block;
     padding: 7px 31px;
     margin-top: 36px;
     margin-bottom: 48px;
-    font-family: 'wotfardRegular';
     font-size: 10px;
-    color: black;
     letter-spacing: 1.5px;
+    line-height: 16px;
     text-transform: uppercase;
     border: 1px solid #F48065;
-    outline: none;
-    line-height: 16px;
-    background: white;
+
 }
-.hero__banner {
+.hero__mediaRight {
     display: block;
     margin-left: auto;
     width: calc(100% - 56px);
     max-width: 925px;
 }
-.hero__product {
+.hero__mediaLeft {
     position: relative;
     margin-top: -40px;
     width: calc(100% - 169px);
@@ -76,28 +61,22 @@
 }
 .ourRitual {
     margin: 33px 36px;
+    text-align: center;
 }
 .ourRitual__header {
     text-align: center;
 }
-.ourRitual__heading {
-    font-family: 'ivyModeLight';
+.OurRitual__heading {
     font-size: 32px;
-    font-weight: lighter;
-    letter-spacing: 2px;
     margin-bottom: 16px;
 }
-.ourRitual__subHeading {
-    font-family: 'wotfardRegular';
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-size: 10px;
-    color: black;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #F48065;
-    margin-bottom: 40px;
+.ourRitual__button {
     display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #F48065;
 }
+
 .OurRitual__item {
     margin-bottom: 38px;
     overflow: hidden;
@@ -137,12 +116,8 @@
     font-family: 'wotfardMedium';
     font-size: 12px;
 }
-.item__add {
+.item__button {
     margin-left: 6px;
-    border: none;
-    background: transparent;
-    font-family: 'wotfardMedium';
-    text-transform: uppercase;
     font-size: 12px;
     color: #F48065;
     letter-spacing: 1.05px;
@@ -157,6 +132,9 @@
     .hero__title {
         font-size: 25px;
     }
+    .item__detail {
+        text-align: center;
+    }
 }
 @media (min-width:768px) {
     .hero {
@@ -169,7 +147,7 @@
         letter-spacing: 2px;
         text-transform: capitalize;
     }
-    .hero__shop {
+    .hero__button {
         margin-top: 53px;
         margin-bottom: 40px;
         padding: 16px 49px;
@@ -180,6 +158,9 @@
         display: flex;
         margin: 0 auto;
         max-width: calc(357*3px);
+    }
+    .item__detail {
+        text-align: left;
     }
 }
 @media (min-width:1024px) {
@@ -198,7 +179,7 @@
     .hero__title::after {
         content: ":";
     }
-    .hero__product {
+    .hero__mediaLeft {
         margin-top: -848px;
         margin-left: 54px;
     }
@@ -211,7 +192,8 @@
         font-size: 48px;
         letter-spacing: 1.5px;
     }
-    .ourRitual__subHeading {
+    
+    .ourRitual__button {
         padding-bottom: 4px;
         margin-bottom: 80px;
         font-size: 12px;
