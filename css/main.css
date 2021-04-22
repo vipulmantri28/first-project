@@ -7,6 +7,21 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+ /* font-faces to be used for the page */
+ @font-face {
+  font-family: "wotfardMedium";
+  src: url(./../assets/Wotfard_Roman_Webfont/wotfard-medium-webfont.ttf) format('truetype')
+
+}
+@font-face {
+  font-family: "wotfardRegular";   
+  src: url(/assets/Wotfard_Roman_Webfont/wotfard-regular-webfont.ttf);
+}
+@font-face {
+  font-family: "ivyModeLight";
+  src: url(/assets/IvyMode_Font/IvyModeLight/IvyModeLight.otf);
+}
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -20,9 +35,8 @@ html {
   text-rendering: optimizeLegibility;
 }
 body {
-  max-width: 1440px;
-  margin: 0 auto;
-  background: antiquewhite;
+  font-family: "wotfardRegular";
+  color: #2E251C;
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -93,6 +107,93 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* max-width of the page with background color */
+
+.home {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #E6E0DD;
+}
+/* Style for headings */
+/* reset the properties for heading with common font-family */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "ivyModeLight", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+/* heading class styles for mobile devices */
+.heading-level-1, 
+.heading-level-3, 
+.heading-level-4,
+.heading-level-5 {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.heading-level-2 {
+  font-size: 48px;
+  line-height: 54px;
+}
+
+/* heading class styles for desktops*/
+@media (min-width: 1024px) {
+  
+  .heading-level-1 {
+    font-size: 80px;
+    line-height: 96px;
+  }
+  
+  .heading-level-2 {
+    font-size: 64px;
+    line-height: 81px;
+  }
+  
+  .heading-level-3 {
+    font-size: 48px;
+    letter-spacing: 1.5px;
+    line-height: 64px;
+  }
+  .heading-level-4 {
+    font-size: 36px;
+    letter-spacing: 1.64px;
+    line-height: 53px;
+  }
+  .heading-level-5 {
+    font-size: 36px;
+    letter-spacing: 0;
+    line-height: 56px;
+  }
+  
+}
+
+/* style for button */
+
+
+/* style for links */
+.button-link {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #F48065;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+}
+
+@media (min-width:1024px) {
+  .button-link {
+    padding-bottom: 4px;
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
 
 /* ==========================================================================
    Helper classes
@@ -270,35 +371,10 @@ textarea {
 
 /* global CSS */
 
-/* heading level 1 */
 
-.heading-1 {
-  font-family: 'ivyModeLight';
-  font-weight: lighter;
-  letter-spacing: 2px;
-}
+/* naked button for links */
 
-/* button css */
-.button {
-  font-family: 'wotfardRegular';
-  color: black;
-}
 
-/* naked button */
 
-.nakedButton {
-  font-family: 'wotfardRegular';
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 10px;
-  color: black;
-}
+/* CSS for headings */
 
-/* clear button */
-
-.clearButton {
-  border: none;
-  background: transparent;
-  font-family: 'wotfardMedium';
-  text-transform: uppercase;
-}

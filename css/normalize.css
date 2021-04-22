@@ -37,10 +37,6 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  margin: 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -77,8 +73,11 @@ p {
  */
 
 a {
+  display: inline-block;
   background-color: transparent;
   text-decoration: none;
+  font-family: "wotfardRegular";
+  color: #2E251C;
 }
 
 /**

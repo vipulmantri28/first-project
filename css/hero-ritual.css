@@ -1,16 +1,5 @@
-@font-face {
-    font-family: "wotfardRegular";
-    src: url(/assets/Wotfard_Roman_Webfont/wotfard-regular-webfont.ttf);
-}
-@font-face {
-    font-family: "ivyModeLight";
-    src: url(/assets/IvyMode_Font/IvyModeLight/IvyModeLight.otf);
-}
 
-.home {
-    background: white;
-}
-.heroRitual {
+.hero-ritual {
     position: relative;
     overflow: hidden;
     background-image: url(/img/ritual_bg.png);
@@ -23,29 +12,21 @@
 }
 .hero__title {
     display: block;
-    font-family: "wotfardRegular";
     margin-bottom: 10px;
+    font-family: "wotfardRegular";
     font-size: 12px;
-    letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 12px;
 }
-.hero__heading {
-    font-size: 48px;
-    line-height: 54px;
-}
 
-.hero__button {
-    display: inline-block;
+.button--hero {
     padding: 7px 31px;
     margin-top: 36px;
     margin-bottom: 48px;
-    font-size: 10px;
-    letter-spacing: 1.5px;
-    line-height: 16px;
-    text-transform: uppercase;
     border: 1px solid #F48065;
-
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
 }
 .hero__mediaRight {
     display: block;
@@ -59,25 +40,21 @@
     width: calc(100% - 169px);
     max-width: 410px;
 }
-.ourRitual {
-    margin: 33px 36px;
+.ritual {
+    margin: 33px 36px 339px;
     text-align: center;
 }
-.ourRitual__header {
+.ritual__header {
     text-align: center;
 }
-.OurRitual__heading {
-    font-size: 32px;
+.heading-level-3--ritual {
     margin-bottom: 16px;
 }
-.ourRitual__button {
-    display: inline-block;
-    padding-bottom: 5px;
+.button--ritual {
     margin-bottom: 40px;
-    border-bottom: 1px solid #F48065;
 }
 
-.OurRitual__item {
+.ritual__item {
     margin-bottom: 38px;
     overflow: hidden;
 }
@@ -101,7 +78,6 @@
     margin-bottom: 5px;
 }
 .item__rating span {
-    font-family: "wotfardRegular";
     font-size: 11px;
     line-height: 16px;
 }
@@ -121,6 +97,10 @@
     font-size: 12px;
     color: #F48065;
     letter-spacing: 1.05px;
+    border: none;
+    background: transparent;
+    font-family: 'wotfardMedium';
+    text-transform: uppercase;
 }
 
 
@@ -144,17 +124,16 @@
     .hero__title {
         font-family: "ivyModeLight";
         font-size: 48px;
-        letter-spacing: 2px;
         text-transform: capitalize;
     }
-    .hero__button {
+    .button--hero {
+        padding: 16px 49px;
         margin-top: 53px;
         margin-bottom: 40px;
-        padding: 16px 49px;
         font-size: 14px;
         letter-spacing: 2px;
     }
-    .ourRitual__list {
+    .ritual__list {
         display: flex;
         margin: 0 auto;
         max-width: calc(357*3px);
@@ -164,14 +143,11 @@
     }
 }
 @media (min-width:1024px) {
-    /* .heroRitual::before {
-        transform: rotate(4deg);
-    } */
     .hero {
         margin-top: 108px;
         margin-left: 110px;
     }
-    .hero__title, .hero__heading {
+    .hero__title {
         margin-bottom: 0;
         font-size: 64px;
         line-height: 81px;
@@ -183,26 +159,20 @@
         margin-top: -848px;
         margin-left: 54px;
     }
-    .ourRitual {
+    .ritual {
         margin-top: 128px;
-        padding-bottom: 180px;
+        margin-bottom: 180px;
     }
-    .ourRitual__heading {
+    .heading-level-3--ritual {
         margin-bottom: 46px;
-        font-size: 48px;
-        letter-spacing: 1.5px;
     }
-    
-    .ourRitual__button {
-        padding-bottom: 4px;
+    .button--ritual {
         margin-bottom: 80px;
-        font-size: 12px;
-        letter-spacing: 2px;
     }
     .item__imgDiv {
         overflow: hidden;
     }
-    .OurRitual__item:hover .item__img {
+    .ritual__item:hover .item__img {
         transform: scale(1.1);
     }
 }

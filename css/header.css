@@ -1,8 +1,4 @@
-@font-face {
-    font-family: "wotfardMedium";
-    src: url(./../assets/Wotfard_Roman_Webfont/wotfard-medium-webfont.ttf) format('truetype')
 
-}
 /* design for mobile devices */
 
 .header {
@@ -48,6 +44,7 @@
     background: #5d4329;
     transform: translateX(-100%);
     transition: 0.4s ease-in-out;
+    z-index: 10;
 }
 .isShown {
     transform: translateX(0);
