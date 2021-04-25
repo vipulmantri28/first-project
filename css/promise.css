@@ -1,0 +1,46 @@
+.promise {
+    display: flex;
+    position: relative;
+}
+.promise__content {
+    position: absolute;
+    right: 12.2rem;
+    top: 6.5rem;
+    width: 681px;
+    z-index: 3;
+}
+.promise__banner {
+    position: relative;
+    z-index: 2;
+}
+.promise__icons {
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    margin-bottom: 18rem;
+    margin-left: 6.225rem;
+    justify-content: space-between;
+}
+.promise__icon {
+    width: 12.4rem;
+    height: 18.9rem;
+    margin-right: 10.95rem;
+}
+.promise__para {
+    margin-bottom: 4rem;
+    margin-top: 24px;
+}
+
+
+.promise__icon svg {
+    width: 55.39px;
+    height: 54.3px;
+}
+
+
+@media (min-width:1024px) {
+    .promise__icon svg {
+        width: 65.28px;
+        height: 64px;
+    }
+}

@@ -21,7 +21,10 @@
   font-family: "ivyModeLight";
   src: url(/assets/IvyMode_Font/IvyModeLight/IvyModeLight.otf);
 }
-
+@font-face {
+  font-family: "laLuxesRegular";
+  src: url(/assets/La_Luxes_Font_Duo_+_Logos/Webfont/LaLuxesScript.woff2);
+}
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -108,12 +111,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* changing the font size of root to 10px for usage of rem*/
+
+:root {
+  font-size: 62.5%;
+}
+
 /* max-width of the page with background color */
 
 .home {
   max-width: 1440px;
   margin: 0 auto;
-  background: #E6E0DD;
+  background: rgb(245 243 242);
 }
 /* Style for headings */
 /* reset the properties for heading with common font-family */
@@ -127,49 +136,49 @@ h6 {
   padding: 0;
   font-family: "ivyModeLight", Arial, Helvetica, sans-serif;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: .2rem;
 }
 /* heading class styles for mobile devices */
 .heading-level-1, 
 .heading-level-3, 
 .heading-level-4,
 .heading-level-5 {
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 3.2rem;
+  line-height: 4rem;
 }
 
 .heading-level-2 {
-  font-size: 48px;
-  line-height: 54px;
+  font-size: 4.8rem;
+  line-height: 5.4rem;
 }
 
 /* heading class styles for desktops*/
 @media (min-width: 1024px) {
   
   .heading-level-1 {
-    font-size: 80px;
-    line-height: 96px;
+    font-size: 8rem;
+    line-height: 9.6rem;
   }
   
   .heading-level-2 {
-    font-size: 64px;
-    line-height: 81px;
+    font-size: 6.4rem;
+    line-height: 8.1rem;
   }
   
   .heading-level-3 {
-    font-size: 48px;
-    letter-spacing: 1.5px;
-    line-height: 64px;
+    font-size: 4.8rem;
+    letter-spacing: .15rem;
+    line-height: 6.4rem;
   }
   .heading-level-4 {
-    font-size: 36px;
-    letter-spacing: 1.64px;
-    line-height: 53px;
+    font-size: 3.6rem;
+    letter-spacing: .164rem;
+    line-height: 5.3rem;
   }
   .heading-level-5 {
-    font-size: 36px;
+    font-size: 3.6rem;
     letter-spacing: 0;
-    line-height: 56px;
+    line-height: 5.6rem;
   }
   
 }
@@ -178,21 +187,44 @@ h6 {
 
 
 /* style for links */
-.button-link {
+.link {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: 1px solid #F48065;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 10px;
+  letter-spacing: .15rem;
+  font-size: 1rem;
 }
 
 @media (min-width:1024px) {
-  .button-link {
+  .link {
     padding-bottom: 4px;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
   }
+}
+
+/* styles for paragraphs */
+
+.paragraph {
+  font-family: 'ivyModeLight';
+  font-size: 2.1rem;
+  letter-spacing: .175rem;
+  line-height: 3.6rem;
+}
+
+@media (min-width:1024px) {
+  .paragraph {
+    font-size: 4.2rem;
+    letter-spacing: .2rem;
+    line-height: 6.4rem;
+  }
+}
+
+.paragraph-small {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: .108rem;
 }
 
 /* ==========================================================================

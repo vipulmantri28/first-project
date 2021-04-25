@@ -10,16 +10,16 @@
     margin-top: 40px;
     margin-left: 20px;
 }
-.hero__title {
+.hero span {
     display: block;
     margin-bottom: 10px;
     font-family: "wotfardRegular";
-    font-size: 12px;
+    font-size: clamp(1.2rem, 4vw, 6.4rem);;
     text-transform: uppercase;
-    line-height: 12px;
+    line-height: clamp(1.2rem, 5vw, 8.1rem);
 }
 
-.button--hero {
+.button {
     padding: 7px 31px;
     margin-top: 36px;
     margin-bottom: 48px;
@@ -58,12 +58,15 @@
     margin-bottom: 38px;
     overflow: hidden;
 }
-.item__img {
+.ritual__item:last-child .item__content .paragraph--ritual {
+    line-height: 20px;
+}
+.item__mediaCenter {
     width: 100%;
     max-width: 356px;
     transition: transform 0.5s ease-in-out;
 }
-.item__detail {
+.item__content {
     text-align: left;
     margin-top: 16px;
     margin-left: 7px;
@@ -81,12 +84,9 @@
     font-size: 11px;
     line-height: 16px;
 }
-.item__name {
+.paragraph--ritual {
     margin-bottom: 4px;
-    font-family: 'wotfardRegular';
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1.08px;
+    line-height: 16px;
 }
 .item__price {
     font-family: 'wotfardMedium';
@@ -109,10 +109,7 @@
         margin-top: 60px;
         margin-left: 40px;
     }
-    .hero__title {
-        font-size: 25px;
-    }
-    .item__detail {
+    .item__content {
         text-align: center;
     }
 }
@@ -121,12 +118,11 @@
         margin-top: 80px;
         margin-left: 70px;
     }
-    .hero__title {
+    .hero span {
         font-family: "ivyModeLight";
-        font-size: 48px;
         text-transform: capitalize;
     }
-    .button--hero {
+    .button {
         padding: 16px 49px;
         margin-top: 53px;
         margin-bottom: 40px;
@@ -138,7 +134,7 @@
         margin: 0 auto;
         max-width: calc(357*3px);
     }
-    .item__detail {
+    .item__content {
         text-align: left;
     }
 }
@@ -147,12 +143,10 @@
         margin-top: 108px;
         margin-left: 110px;
     }
-    .hero__title {
+    .hero span {
         margin-bottom: 0;
-        font-size: 64px;
-        line-height: 81px;
     }
-    .hero__title::after {
+    .hero span::after {
         content: ":";
     }
     .hero__mediaLeft {
@@ -169,11 +163,15 @@
     .button--ritual {
         margin-bottom: 80px;
     }
-    .item__imgDiv {
+    .item__media {
         overflow: hidden;
     }
-    .ritual__item:hover .item__img {
+    .ritual__item:hover .item__mediaCenter {
         transform: scale(1.1);
+    }
+    .ritual__item:last-child .item__content .paragraph--ritual {
+        line-height: 16px;
+        
     }
 }
 @media (min-width: 1300px) {

@@ -1,0 +1,98 @@
+.wildly {
+    position: relative;
+    bottom: 10.1rem;
+    background-color: rgb(245 226 221);
+}
+.wildly::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 125%;
+    background-image: url(/img/wildly-bg-img.png);
+    background-repeat: no-repeat;
+}
+.wildly__content {
+    padding-top: 16.01rem;
+
+}
+.wildly__content h2 {
+    margin-left: 7.5rem;
+}
+.heading-level-1 span {
+    display: inline-block;
+    margin-bottom: 3.4rem;
+}
+.heading-level-1 span:last-child {
+    margin-bottom: 0;
+}
+.heading-level-1 span i {
+    position: relative;
+    display: inline-block;
+    margin-left: 7.2rem;
+    font-family: "laLuxesRegular";
+    font-size: 15.7rem;
+    letter-spacing: 0;
+    line-height: 9.7rem;
+}
+.heading-level-1 span i::after {
+    content: "";
+    position: absolute;
+    bottom: 2.2rem;
+    left: 0;
+    width: 100%;
+    border: 1px solid #F48065;
+}
+.wildly__content-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 22.3rem;
+    margin-top: 7rem;
+    width: 66.6rem;
+    font-family: 'wotfardMedium';
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: .25rem;
+    line-height: 1.6rem;
+}
+.wildly__media {
+    position: relative;
+    padding-bottom: 18rem;
+    margin-top: 19.5rem;
+    text-align: right;
+}
+.green {
+    position: absolute;
+    right: 0;
+    top: -33.5rem;
+}
+.wildly__media-div picture {
+    display: block;
+    margin-left: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.wildly__media-div p {
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+.green p {
+    position: absolute;
+    left: -15rem;
+    top: 138px;
+    transform: rotate(-90deg);
+}
+.papaya {
+    margin-right: 24.9rem;
+}
+.chebula {
+    position: absolute;
+    right: 66.45rem;
+    bottom: calc(18rem + 21rem);
+}
+.chebula p {
+    position: absolute;
+    bottom: 16rem;
+    transform: rotate(-90deg);
+    left: -15rem;
+}
