@@ -7,7 +7,7 @@
 .collection__items {
     display: flex;
     justify-content: space-between;
-    margin: 0 11.4rem 17.9rem 11.4rem;
+    margin: 0 11.4rem 5.1rem 11.4rem;
 }
 .collection__item {
     margin-top: 6.3rem;
