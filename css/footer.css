@@ -1,0 +1,108 @@
+.footer {
+    display: flex;
+    padding-top: 12rem;
+    padding-bottom: 4rem;
+    padding-left: 17.8rem;
+    padding-right: 17.8rem;
+    background-color: #2E251C;
+    color: rgba(230, 224, 221, .5);
+}
+.footer a {
+    color: rgba(230, 224, 221, .5);
+}
+.footer__left {
+    margin-left: 2.1rem;
+    margin-right: 15.4rem;
+}
+.footer__top {
+    display: flex;
+}
+.footer__top-left {
+    width: 41rem;
+}
+.footer__input {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid #B1A7A2;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+.footer__input input {
+    background: transparent;
+    color: #E6E0DD;
+    border: none;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    padding: 0;
+    outline: none;
+}
+.footer__input button {
+    background: transparent;
+    border: none;
+    color: #EBCDC3;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    line-height: 1.6rem;
+    font-family: 'wotfardMedium';
+}
+.footer__top-left-content {
+    font-size: 1.2rem;
+}
+.footer__top-right {
+    margin-left: 14rem;
+}
+.footer__heading {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #EBCDC3;
+}
+.social__icons {
+    display: inline-block;
+    margin-top: 2.4rem;
+}
+.social__icon {
+    margin-right: 4rem;
+}
+.social__icon:last-child {
+    margin-right: 0;
+}
+.social__icon svg {
+    width: 2.4rem;
+}
+.footer__bottom {
+    margin-top: 6.4rem;
+}
+.footer__links {
+    display: flex;
+    margin-bottom: 6.4rem;
+}
+.footer__list {
+    margin-top: 1.6rem;
+}
+.footer__item {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+}
+.footer__shop {
+    width: 29rem;
+    height: 22.4rem;
+}
+.footer__shop ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 21.4rem;
+}
+.footer__about-us {
+    margin: 0 17.4rem;
+}
+.footer__copyright {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+}
+.terms {
+    margin-left: 3rem;
+    margin-right: 3.6rem;
+}

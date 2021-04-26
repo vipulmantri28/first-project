@@ -56,12 +56,12 @@ body {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: #EBCDC3;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: #EBCDC3;
   text-shadow: none;
 }
 
