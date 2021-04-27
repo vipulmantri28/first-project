@@ -51,15 +51,15 @@
     line-height: 1.6rem;
 }
 .wildly__media {
-    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
     padding-bottom: 18rem;
     margin-top: 19.5rem;
     text-align: right;
 }
-.green {
-    position: absolute;
-    right: 0;
-    top: -33.5rem;
+.wildly__media-div {
+    position: relative;
+    display: flex;
 }
 .wildly__media-div picture {
     display: block;
@@ -71,23 +71,23 @@
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
-.green p {
-    position: absolute;
-    left: -15rem;
-    top: 138px;
-    transform: rotate(-90deg);
+.wildly__green {
+    margin-top: -33.5rem;
 }
-.papaya {
-    margin-right: 24.9rem;
+.wildly__papaya {
+    margin-right: -11rem;
+    flex-direction: column-reverse;
+    text-align: right;
 }
-.chebula {
-    position: absolute;
-    right: 66.45rem;
-    bottom: calc(18rem + 21rem);
+.wildly__chebula {
+    margin-right: -6.45rem;
+    margin-top: -4.8rem;
 }
-.chebula p {
-    position: absolute;
-    bottom: 16rem;
-    transform: rotate(-90deg);
-    left: -15rem;
+.wildly__green p, .wildly__chebula p {
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+    text-align: end;
+}
+.wildly__chebula p {
+    margin-top: 4.1rem;
 }
