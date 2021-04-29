@@ -24,7 +24,7 @@
     margin-right: 2.4rem;
     font-size: 1.4rem;
     line-height: 2.4rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 3.2rem;
 }
 .customer__content-bottom {
     position: relative;
@@ -45,21 +45,19 @@
 
 @media (min-width:1024px) {
     .customer {
-        position: relative;
+        display: flex;
         padding-top: 12.2rem;
         padding-bottom: 18rem;
     }
     .customer__content-top, .customer__content-bottom {
-        position: absolute;
         padding-top: 4.3rem;
         padding-left: 4.4rem;
         width: 33.4rem;
         height: 29.6rem;
     }
     .customer__content-top {
-        top: 25.6rem;
-        left: 7.5rem;
-        margin-left: 0;
+        margin-top: 12.8rem;
+        margin-left: 7.5rem;
     }
     .customer__content-top h3 span, .customer__content-bottom h3 span {
         display: block;
@@ -69,10 +67,9 @@
         margin-right: 5rem;
     }
     .customer__content-bottom {
-        top: 43.5rem;
-        left: 40.5rem;
-        margin-top: 0;
-        margin-left: 0;
+        margin-left: -4.8rem;
+        margin-top: 30.7rem;
+        margin-right: -4.8rem;
     }
     .customer__content-bottom h3 {
         margin-right: 0;
