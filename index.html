@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="/css/hero-ritual.css">
     <link rel="stylesheet" href="/css/promise.css">
-    <link rel="stylesheet" href="/css/wildly.css">
+    <link rel="stylesheet" href="/css/wildly-collection.css">
     <link rel="stylesheet" href="/css/collection.css">
     <link rel="stylesheet" href="/css/quiz.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -766,8 +766,10 @@
                   </g>
               </g>
             </svg>
-            <p class="paragraph-small promise__para">natural biocompatible</p>
-            <a href="#" class="link">learn more</a>
+            <div class="promise__icon-content">
+              <p class="paragraph-small promise__para">natural biocompatible</p>
+              <a href="#" class="link">learn more</a>
+            </div>
           </div>
           <div class="promise__icon">
             <svg viewBox="0 0 47 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -790,8 +792,10 @@
                   </g>
               </g>
             </svg>
-            <p class="paragraph-small promise__para">clinincally proven</p>
-            <a href="#" class="link">learn more</a>
+            <div class="promise__icon-content">
+              <p class="paragraph-small promise__para">clinincally proven</p>
+              <a href="#" class="link">learn more</a>
+            </div>
           </div>
           <div class="promise__icon">
             <svg viewBox="0 0 65 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -815,17 +819,19 @@
                   </g>
               </g>
             </svg>
-            <p class="paragraph-small promise__para">clean & sustainable</p>
-            <a href="#" class="link">learn more</a>
+            <div class="promise__icon-content">
+              <p class="paragraph-small promise__para">clean & sustainable</p>
+              <a href="#" class="link">learn more</a>
+            </div>
           </div>
         </div>
       </div>
       <div class="wildly-collection">
         <div class="wildly">
         <div class="wildly__content">
-          <h2 class="heading-level-1">
-            <span>Wildly clean, natural</span> 
-            <span><i>ingredients</i> that work.</span>
+          <h2 class="heading-level-1 wildly__heading">
+            <span class="wildly__heading-top">Wildly clean, <span>natural</span></span> 
+            <span class="wildly__heading-bottom"><i>ingredients</i> that work.</span>
           </h2>
           <p class="wildly__content-bottom"><span>100% non toxic.</span>
           <span>made safe certified.</span>
@@ -835,22 +841,22 @@
           <div class="wildly__media-div wildly__green">
             <p> <span>green tea // </span><span>nourishing cleanser</span></p>
             <picture>
-              <source>
-              <img src="/img/green-tea.png" alt="">
+              <source srcset="/img/green-tea.png" media="(min-width:1024px)">
+              <img src="/img/green-tea-mobile.png" alt="Green Tea Nourishing Cleanser">
             </picture>
           </div>
           <div class="wildly__media-div wildly__papaya">
             <p><span>papaya // </span><span>pure radiance oil</span></p>
             <picture>
-              <source>
-              <img src="/img/papaya.png" alt="">
+              <source srcset="/img/papaya.png" media="(min-width:1024px)">
+              <img src="/img/papaya-mobile.png" alt="Papaya Pure Radiance Oil">
             </picture>
           </div>
           <div class="wildly__media-div wildly__chebula">
             <p><span>chebula // </span><span>active immunity serum</span></p>
             <picture>
-              <source>
-              <img src="/img/chebula.png" alt="">
+              <source srcset="/img/chebula.png" media="(min-width:1024px)">
+              <img src="/img/chebula-mobile.png" alt="Chebula Active Immunity Serum">
             </picture>
           </div>
         </div>
@@ -889,7 +895,10 @@
               </div>
             </div>
             <div class="collection__media">
-              <img src="/img/renew.png" alt="">
+              <picture>
+                <source srcset="/img/renew.png" media="(min-width:1024px)">
+                <img src="/img/collection-product-mobile.png" alt="Renew Reapir Serum">
+              </picture>
             </div>
           </div>
           <div class="collection__item">
@@ -908,24 +917,26 @@
       </div>
       
       <div class="customer">
-        <div class="customer__contentTop">
+        <div class="customer__content-top">
           <h3 class="heading-level-4">
-            take the skin quiz
+            <span>Take the </span>
+            <span>Skin Quiz</span>
           </h3>
           <p class="customer__content">Nourish aging skin with nature’s most potent ingredients, reducing the appearance of fine lines and wrinkles.</p>
           <a href="#" class="link">skin quiz</a>
         </div>
-        <div class="customer__contentBottom">
+        <div class="customer__content-bottom">
           <h3 class="heading-level-4">
-            speak to a skin consltant
+            <span>Speak to a </span>
+            <span>Skin Consultant</span>
           </h3>
           <p class="customer__content">If you are still unsure about your skin needs, speak to one of our consultants at NO COST to you.</p>
           <a href="#" class="link">schedule consultation</a>
         </div>
         <div class="customer__media">
           <picture>
-            <source>
-            <img src="/img/quiz.png" alt="">
+            <source srcset="/img/quiz.png" media="(min-width:1024px)">
+            <img src="/img/quiz-mobile.png" alt="">
           </picture>
         </div>
       </div>
@@ -936,7 +947,7 @@
         <div class="footer__right">
           <div class="footer__top">
             <div class="footer__top-left">
-              <p class="footer__heading">Sign Up for Offers, Product News, and Tip</p>
+              <p class="footer__heading">Sign Up for Offers, Product News, and Tips</p>
               <div class="footer__input">
                 <input type="text" placeholder="Enter your phone or email">
                 <button>SEND</button>

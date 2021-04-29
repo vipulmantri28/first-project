@@ -20,13 +20,18 @@
 }
 
 .button {
-    padding: 7px 31px;
-    margin-top: 36px;
-    margin-bottom: 48px;
+    --top-bottom: clamp(.7rem, 2vw, 1.6rem);
+    --left-right: clamp(3.1rem, 4vw, 4.9rem);
+    padding: var(--top-bottom) var(--left-right);
+    margin-top: clamp(3.6rem, 5vw, 5.3rem);
+    margin-bottom: 4rem;
     border: 1px solid #F48065;
-    font-size: 10px;
-    line-height: 16px;
-    letter-spacing: 1.5px;
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    line-height: 1.6rem;
+    letter-spacing: clamp(.15rem, .3vw, .2rem);
+}
+.hero__media {
+    margin-top: .8rem;
 }
 .hero__mediaRight {
     display: block;
@@ -122,12 +127,8 @@
         font-family: "ivyModeLight";
         text-transform: capitalize;
     }
-    .button {
-        padding: 16px 49px;
-        margin-top: 53px;
-        margin-bottom: 40px;
-        font-size: 14px;
-        letter-spacing: 2px;
+    .hero__media {
+        margin-top: 0;
     }
     .ritual__list {
         display: flex;
@@ -135,7 +136,12 @@
         max-width: calc(357*3px);
     }
     .item__content {
+        margin-top: 24px;
+        margin-left: 23px;
         text-align: left;
+    }
+    .paragraph--ritual {
+        margin-bottom: .8rem;
     }
 }
 @media (min-width:1024px) {
@@ -154,11 +160,11 @@
         margin-left: 54px;
     }
     .ritual {
-        margin-top: 128px;
-        margin-bottom: 180px;
+        margin-top: 13.8rem;
+        margin-bottom: 14.3rem;
     }
     .heading-level-3--ritual {
-        margin-bottom: 46px;
+        margin-bottom: 5.1rem;
     }
     .button--ritual {
         margin-bottom: 80px;

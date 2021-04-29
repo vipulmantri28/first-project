@@ -1,9 +1,8 @@
 .footer {
-    display: flex;
-    padding-top: 12rem;
-    padding-bottom: 4rem;
-    padding-left: 17.8rem;
-    padding-right: 17.8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6.1rem;
+    padding-bottom: 4.8rem;
     background-color: #2E251C;
     color: rgba(230, 224, 221, .5);
 }
@@ -11,14 +10,10 @@
     color: rgba(230, 224, 221, .5);
 }
 .footer__left {
-    margin-left: 2.1rem;
-    margin-right: 15.4rem;
+    text-align: center;
 }
-.footer__top {
-    display: flex;
-}
-.footer__top-left {
-    width: 41rem;
+.footer__right {
+    margin-top: 4.8rem;
 }
 .footer__input {
     display: flex;
@@ -39,6 +34,7 @@
     outline: none;
 }
 .footer__input button {
+    padding: 0;
     background: transparent;
     border: none;
     color: #EBCDC3;
@@ -51,7 +47,7 @@
     font-size: 1.2rem;
 }
 .footer__top-right {
-    margin-left: 14rem;
+    margin-top: 4rem;
 }
 .footer__heading {
     font-size: 1.4rem;
@@ -59,11 +55,11 @@
     color: #EBCDC3;
 }
 .social__icons {
-    display: inline-block;
+    display: flex;
     margin-top: 2.4rem;
 }
 .social__icon {
-    margin-right: 4rem;
+    margin-right: 3.7rem;
 }
 .social__icon:last-child {
     margin-right: 0;
@@ -72,11 +68,24 @@
     width: 2.4rem;
 }
 .footer__bottom {
-    margin-top: 6.4rem;
+    margin-top: 5rem;
 }
 .footer__links {
-    display: flex;
-    margin-bottom: 6.4rem;
+    margin-bottom: 4.1rem;
+}
+.footer__links .footer__heading {
+    position: relative;
+}
+.footer__links .footer__heading::after {
+    content: "";
+    width: .7rem;
+    height: .7rem;
+    border-left: .1rem solid;
+    border-top: .1rem solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-135deg);
 }
 .footer__list {
     margin-top: 1.6rem;
@@ -85,10 +94,7 @@
     font-size: 1.4rem;
     line-height: 3.2rem;
 }
-.footer__shop {
-    width: 29rem;
-    height: 22.4rem;
-}
+
 .footer__shop ul {
     display: flex;
     flex-direction: column;
@@ -96,13 +102,67 @@
     max-height: 21.4rem;
 }
 .footer__about-us {
-    margin: 0 17.4rem;
+    margin: 3.2rem 0;
 }
 .footer__copyright {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 3.2rem;
+    text-align: center;
 }
 .terms {
-    margin-left: 3rem;
-    margin-right: 3.6rem;
+    margin-right: 3rem;
+}
+@media (min-width:1024px) {
+    .footer {
+        display: flex;
+        padding-top: 12rem;
+        padding-bottom: 4rem;
+        padding-left: 17.8rem;
+        padding-right: 17.8rem;
+    }
+    .footer__left {
+        margin-left: 2.1rem;
+        margin-right: 15.4rem;
+    }
+    .footer__right {
+        margin-top: 0;
+    }
+    .footer__top {
+        display: flex;
+    }
+    .footer__top-left {
+        width: 41rem;
+    }
+    .footer__top-right {
+        margin-top: 0;
+        margin-left: 14rem;
+    }
+    .social__icons {
+        display: inline-block;
+    }
+    .footer__bottom {
+        margin-top: 6.4rem;
+    }
+    .footer__links {
+        display: flex;
+        margin-bottom: 6.4rem;
+    }
+    .footer__shop {
+        width: 29rem;
+        height: 22.4rem;
+    }
+    .footer__links .footer__heading::after {
+        display: none;
+    }
+    .footer__about-us {
+        margin: 0 17.4rem;
+    }
+    .footer__copyright {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    .terms {
+        margin-left: 3rem;
+        margin-right: 3.6rem;
+    }
 }

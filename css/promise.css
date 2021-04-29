@@ -1,44 +1,71 @@
 .promise {
-    display: flex;
+    display: block;
     position: relative;
 }
 .promise__content {
     position: absolute;
-    right: 12.2rem;
-    top: 6.5rem;
-    width: 681px;
+    top: -26rem;
+    right: 3.9rem;
+    width: clamp(25.5rem, 48vw, 68.1rem);
     z-index: 3;
+}
+.promise__media {
+    text-align: right;
 }
 .promise__banner {
     position: relative;
     z-index: 2;
 }
 .promise__icons {
-    display: flex;
-    align-self: flex-end;
-    text-align: center;
-    margin-bottom: 18rem;
-    margin-left: 6.225rem;
-    justify-content: space-between;
+    display: block;
+    margin-top: 5.7rem;
+    margin-left: 2.2rem;
 }
 .promise__icon {
-    width: 12.4rem;
-    height: 18.9rem;
-    margin-right: 10.95rem;
+    display: flex;
+    margin-bottom: 5.67rem;
 }
-.promise__para {
-    margin-bottom: 4rem;
-    margin-top: 24px;
-}
-
-
 .promise__icon svg {
-    width: 55.39px;
-    height: 54.3px;
+    width: 5.539rem;
+    height: 5.43rem;
+}
+.promise__icon-content {
+    margin-left: 2.461rem;
 }
 
 
 @media (min-width:1024px) {
+    .promise {
+        display: flex;
+        overflow: hidden;
+    }
+    .promise__content {
+        right: 12.2rem;
+        top: 6.5rem;
+    }
+    .promise__icons {
+        display: flex;
+        align-self: flex-end;
+        margin-top: 0;
+        margin-bottom: 18rem;
+        margin-left: 6.225rem;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .promise__icon {
+        display: block;
+        width: 12.4rem;
+        height: 18.9rem;
+        margin-right: 9.6rem;
+        margin-bottom: 0;
+    }
+    .promise__icon-content {
+        margin-left: 0;
+    }
+    .promise__para {
+        margin-bottom: 4rem;
+        margin-top: 24px;
+    }
     .promise__icon svg {
         width: 65.28px;
         height: 64px;

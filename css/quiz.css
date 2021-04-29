@@ -1,41 +1,83 @@
 .customer {
-    position: relative;
-    padding-top: 12.9rem;
-    padding-bottom: 18rem;
+    padding-top: 3rem;
     background-image: url(/img/quiz-bg.png);
     background-repeat: no-repeat;
     text-align: right;
 }
-.customer__contentTop, .customer__contentBottom {
-    position: absolute;
-    padding-top: 4.3rem;
-    padding-left: 4.4rem;
-    width: 33.4rem;
-    height: 29.6rem;
+.customer__content-top, .customer__content-bottom {
+    padding-top: 2.3rem;
+    padding-left: 2.4rem;
+    width: 22.1rem;
+    height: 31rem;
+    text-align: left;
     text-align: left;
 }
-.customer__contentTop {
-    top: 25.6rem;
-    left: 7.5rem;
+.customer__content-top {
+    margin-left: 2rem;
     background: #E4DED5;
 }
-.customer__contentTop h3 {
-    margin-right: 17.7rem;
-    text-transform: capitalize;
+.customer__content-top h3 {
+    margin-right: 2rem;
 }
 .customer__content {
-    margin-top: 1.1rem;
-    margin-right: 5rem;
+    margin-top: .9rem;
+    margin-right: 2.4rem;
     font-size: 1.4rem;
     line-height: 2.4rem;
     margin-bottom: 2.4rem;
 }
-.customer__contentBottom {
-    top: 43.5rem;
-    left: 40.5rem;
+.customer__content-bottom {
+    position: relative;
+    margin-top: -2.4rem;
+    margin-left: 5.5rem;
     color: white;
     background: #2E251C;
 }
-.customer__contentBottom a {
+.customer__content-bottom h3 {
+    margin-right: 6.5rem;
+}
+.customer__content-bottom a {
     color: white;
+}
+.customer__media {
+    margin-top: -3rem;
+}
+
+@media (min-width:1024px) {
+    .customer {
+        position: relative;
+        padding-top: 12.2rem;
+        padding-bottom: 18rem;
+    }
+    .customer__content-top, .customer__content-bottom {
+        position: absolute;
+        padding-top: 4.3rem;
+        padding-left: 4.4rem;
+        width: 33.4rem;
+        height: 29.6rem;
+    }
+    .customer__content-top {
+        top: 25.6rem;
+        left: 7.5rem;
+        margin-left: 0;
+    }
+    .customer__content-top h3 span, .customer__content-bottom h3 span {
+        display: block;
+    }
+    .customer__content {
+        margin-top: 1.1rem;
+        margin-right: 5rem;
+    }
+    .customer__content-bottom {
+        top: 43.5rem;
+        left: 40.5rem;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .customer__content-bottom h3 {
+        margin-right: 0;
+    }
+    .customer__media {
+        margin-top: 0;
+    }
 }
