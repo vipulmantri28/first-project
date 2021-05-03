@@ -14,9 +14,9 @@
     display: block;
     margin-bottom: 1rem;
     font-family: "wotfardRegular";
-    font-size: clamp(1.2rem, 4vw, 6.4rem);;
+    font-size: clamp(1.2rem, 3.7vw, 6.4rem);;
     text-transform: uppercase;
-    line-height: clamp(1.2rem, 5vw, 8.1rem);
+    line-height: clamp(1.2rem, 3.7vw, 8.1rem);
 }
 
 .button {
@@ -57,10 +57,11 @@
     margin-bottom: 4rem;
 }
 .ritual__heading {
-    margin-bottom: 1.6rem;
+    line-height: 3.7rem;
+    margin-bottom: 2.2rem;
 }
 .ritual__item {
-    margin-bottom: 3.8rem;
+    margin-bottom: 4rem;
     overflow: hidden;
 }
 .ritual__item:last-child .ritual__item-content .ritual__item-heading {
@@ -73,7 +74,8 @@
 }
 .ritual__item-content {
     text-align: left;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem; 
+    /* margin-top: 1.6rem; */
     margin-left: .7rem;
 }
 .star {
@@ -83,14 +85,16 @@
 .ritual__item-rating {
     line-height: 1.9rem;
     margin-left: .2rem;
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
+    /* margin-bottom: .5rem; */
 }
 .ritual__item-rating span {
     font-size: 1.1rem;
     line-height: 1.6rem;
 }
 .ritual__item-heading {
-    margin-bottom: .4rem;
+    /* margin-bottom: .4rem; */
+    margin-bottom: .7rem;
     line-height: 1.6rem;
 }
 .ritual__item-price {
@@ -168,6 +172,7 @@
     }
     .ritual__heading {
         margin-bottom: 5.1rem;
+        line-height: 6.4rem;
     }
     .ritual__item-media {
         overflow: hidden;
@@ -183,5 +188,11 @@
 @media (min-width: 1300px) {
     .hero {
         margin-left: 13.1rem;
+    }
+}
+@media (min-width:1366px) {
+    .hero span {
+        font-size: 6.4rem;
+        line-height: 8.1rem;
     }
 }

@@ -1,9 +1,9 @@
 .collection {
     text-align: center;
-    margin-bottom: 7.6rem;
+    margin: 7.6rem 0;
 }
 .collection .heading-level-3 {
-    margin-top: 11.3rem;
+    /* margin-top: 11.3rem; */
     margin-bottom: 2.6rem;
 }
 .collection__item {
@@ -18,13 +18,16 @@
     margin-top: 1.6rem;
 }
 .collection__heading p {
-    margin-bottom: 2.4rem;
+    margin-bottom: .7rem;
+    /* margin-bottom: 2.4rem; */
     font-size: 1.1rem;
 }
 .collection__heading h3 {
-    font-size: 2.7rem;
+    margin-bottom: 1.7rem;
+    font-size: 2.3rem;
+    /* font-size: 2.7rem; */
     line-height: 3.2rem;
-    margin-bottom: 2.3rem;
+    /* margin-bottom: 2.3rem; */
 }
 .collection__detail {
     margin: 0 2rem;
@@ -67,6 +70,7 @@
 }
 @media (min-width:1024px) {
     .collection {
+        margin-top: 11rem;
         margin-bottom: 0;
     }
     .collection .heading-level-3 {

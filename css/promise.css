@@ -4,7 +4,7 @@
 }
 .promise__content {
     position: absolute;
-    top: -26rem;
+    top: -26.4rem;
     right: 3.9rem;
     width: clamp(25.5rem, 48vw, 68.1rem);
     z-index: 3;
@@ -25,12 +25,19 @@
     display: flex;
     margin-bottom: 5.67rem;
 }
+.promise__icon:last-child {
+    margin-bottom: 5.3rem;
+}
 .promise__icon svg {
     width: 5.539rem;
     height: 5.43rem;
 }
 .promise__icon-content {
     margin-left: 2.461rem;
+}
+.promise__icon-heading {
+    margin-bottom: 1rem;
+    line-height: 1.7rem;
 }
 
 
@@ -47,7 +54,7 @@
         display: flex;
         align-self: flex-end;
         margin-top: 0;
-        margin-bottom: 18rem;
+        margin-bottom: 13.3rem;
         margin-left: 6.225rem;
         text-align: center;
         justify-content: space-between;
@@ -63,8 +70,9 @@
         margin-left: 0;
     }
     .promise__icon-heading {
-        margin-bottom: 4rem;
-        margin-top: 24px;
+        margin-top: 2.6rem;
+        margin-bottom: 4.2rem;
+        line-height: 1.8rem;
     }
     .promise__icon svg {
         width: 65.28px;

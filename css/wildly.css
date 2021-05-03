@@ -45,7 +45,7 @@
 .wildly__content-bottom {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
+    margin-top: 8.8rem;
     margin-left: 3.5rem;
     font-family: 'wotfardRegular';
     font-size: 1.4rem;
@@ -54,36 +54,61 @@
     text-transform: uppercase;
 }
 .wildly__media {
-    margin-top: 5.7rem;
-    padding-bottom: 5.7rem;
+    margin-top: 8rem;
+    padding-bottom: 8rem;
 }
 .wildly__media-item {
     position: relative;
     display: flex;
+    justify-content: flex-end;
+}
+.wildly__green {
+    z-index: 3;
+}
+.wildly__papaya {
+    margin-top: -1.6rem;
+}
+.wildly__chebula {
+    margin-right: 2rem;
 }
 .wildly__media-item picture {
     display: block;
-    margin-left: 2.4rem;
-    margin-bottom: 2.4rem;
 }
 .wildly__media-item p {
-    font-size: 1.2rem;
-    letter-spacing: .2rem;
+    margin-right: 1.2rem;
+    font-size: 1.1rem;
+    letter-spacing: .15rem;
+    line-height: 1.2rem;
     text-transform: uppercase;
 }
-
 .wildly__green p, .wildly__chebula p {
     writing-mode: vertical-lr;
     transform: scale(-1);
+}
+.wildly__green p {
     text-align: end;
 }
-.wildly__chebula p {
-    margin-top: 4.1rem;
+.wildly__green p span:last-child, .wildly__chebula p span:last-child {
+    position: absolute;
+    writing-mode: horizontal-tb;
+    transform: scale(-1);
+    width: max-content;
+    right: 2.4rem;
+}
+.wildly__green p span:last-child {
+    bottom: -2.4rem;
+}
+.wildly__chebula p span:last-child {
+    top: -2.4rem;
+}
+.wildly__papaya p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
 @media (min-width: 1024px) {
     .wildly {
-        bottom: 6.2rem;
+        bottom: 6.9rem;
     }
     .wildly__content {
         padding-top: 22.1rem;
@@ -107,6 +132,7 @@
     .wildly__content-bottom {
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 6rem;
         margin-left: 22.3rem;
         width: 66.6rem;
         font-family: 'wotfardMedium';
@@ -121,16 +147,38 @@
         margin-top: 19.5rem;
         text-align: right;
     }
+    .wildly__media-item p {
+        margin-right: 0;
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
+    }
+    .wildly__media-item picture {
+        margin-left: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
     .wildly__green {
         margin-top: -33.5rem;
     }
     .wildly__papaya {
-        margin-right: -12.6rem;
+        margin-top: 0;
+        margin-right: -13.3rem;
         flex-direction: column-reverse;
         text-align: right;
     }
     .wildly__chebula {
         margin-right: -6.45rem;
         margin-top: -4.8rem;
+    }
+    .wildly__chebula p {
+        margin-top: 4.1rem;
+    }
+    .wildly__papaya p {
+        writing-mode: unset;
+        transform: rotate(0deg);
+    }
+    .wildly__green p span:last-child, .wildly__chebula p span:last-child {
+        position: unset;
+        writing-mode: unset;
+        
     }
 }
