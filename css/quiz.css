@@ -45,6 +45,9 @@
 .customer__media {
     margin-top: -3rem;
 }
+.customer__media picture img {
+    width: 100%;
+}
 
 @media (min-width:1024px) {
     .customer {

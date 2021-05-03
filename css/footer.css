@@ -1,9 +1,11 @@
 .footer {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    background-color: #2E251C;
+}
+.footer__wrapper {
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding-top: 6.1rem;
     padding-bottom: 4.8rem;
-    background-color: #2E251C;
     color: rgba(230, 224, 221, .5);
 }
 .footer a {
@@ -114,11 +116,14 @@
 }
 @media (min-width:1024px) {
     .footer {
+        width: 100%;
+    }
+    .footer__wrapper {
         display: flex;
+        justify-content: center;
+        margin: 0;
         padding-top: 12rem;
         padding-bottom: 4rem;
-        padding-left: 17.8rem;
-        padding-right: 17.8rem;
     }
     .footer__left {
         margin-left: 2.1rem;

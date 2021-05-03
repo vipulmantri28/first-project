@@ -139,6 +139,9 @@
         margin: 0 auto;
         max-width: calc(357*.3rem);
     }
+    .ritual__img {
+        width: 100%;
+    }
     .ritual__item-content {
         margin-top: 2.4rem;
         margin-left: 2.3rem;
