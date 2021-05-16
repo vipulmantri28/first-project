@@ -79,7 +79,7 @@
     position: relative;
     margin-bottom: 1.6rem;
 }
-.footer__links .footer__heading::after {
+.footer__link .footer__heading::after {
     content: "";
     width: .7rem;
     height: .7rem;
@@ -89,20 +89,28 @@
     top: 0;
     right: 0;
     transform: rotate(-135deg);
+    transition: transform 0.3s ease-out;
+}
+.footer__link .active::after {
+    transform: rotate(45deg);
 }
 .footer__item {
     font-size: 1.4rem;
     line-height: 3.2rem;
 }
-
-.footer__shop ul {
+.footer--shop ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     max-height: 21.4rem;
 }
-.footer__about-us {
+.footer--about-us {
     margin: 3.2rem 0;
+}
+.footer__list-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 .footer__copyright {
     font-size: 1.3rem;
@@ -150,14 +158,14 @@
         display: flex;
         margin-bottom: 6.4rem;
     }
-    .footer__shop {
+    .footer--shop {
         width: 29rem;
         height: 22.4rem;
     }
     .footer__links .footer__heading::after {
         display: none;
     }
-    .footer__about-us {
+    .footer--about-us {
         margin: 0 17.4rem;
     }
     .footer__copyright {
