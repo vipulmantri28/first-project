@@ -168,6 +168,9 @@
     .footer--about-us {
         margin: 0 17.4rem;
     }
+    .footer__list-wrapper {
+        max-height: unset;
+    }
     .footer__copyright {
         font-size: 1.3rem;
         text-align: left;
